@@ -46,7 +46,7 @@ BEGIN
 END;
 $$ language plpgsql;
 
-CREATE OR REPLACE FUNCTION remove_notify_trigger_to_table(table_name text) RETURNS VOID AS
+CREATE OR REPLACE FUNCTION remove_notify_trigger_from_table(table_name text) RETURNS VOID AS
 $$
 BEGIN
   EXECUTE 'DROP TRIGGER IF EXISTS notify_trigger_event ON ' || table_name::regclass;
