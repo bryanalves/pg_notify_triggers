@@ -1,4 +1,4 @@
-#!/urs/bin/env ruby
+#!/usr/bin/env ruby
 require 'pg'
 require 'json'
 
